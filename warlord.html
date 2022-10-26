@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WARLORD</title>
+        <meta name="description" content="Warlord is a restaurant">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mainHead" href="top">
+            <h1>warlord</h1>
+        </div>
+            <nav>
+                <div class="nav">
+                    <a class="navlinks" id="sec-1" href="#one">Menu</a>
+                    <a class="navlinks" id="sec-2" href="#two">Gallery</a>
+                    <a class="navlinks" id="sec-3" href="#three">Info</a>
+                </div>
+            </nav>
+            <div class="item" id="one">
+                <div class="menu">
+                    <h2>Our Menu</h2>
+                    <div class="menuItemRight">
+                        <h3>Fire Roasted Chicken</h3>
+                        <p>Chicken with spices roasted for a while and then you eat it</p>
+                    </div>
+                    <br>
+                    <div class="menuItemLeft">
+                        <h3>Pork + Pasta</h3>
+                        <p>pig with pasta added for a spicy meat treat</p>
+                    </div>
+                    <br>
+                    <div class="menuItemRight">
+                        <h3>Veggies</h3>
+                        <p>raw uncut unwashed vegetables straight from the farm</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <div class="item" id="two">
+                <div class="gallery">
+                    <h2>Gallery</h2>
+                </div>
+            </div>
+
+            <div class="item" id="three">
+                <div class="info">
+                    <h2>Info</h2>
+                </div>
+            </div>
+
+
+    </body>
+    <footer>
+        <a id="to_Top" href="#top">TOP</a>
+    </footer>
+</html>
+<script>
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+
+    $('#sec-1').addClass("active");
+
+    $('#two').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-2").addClass("active");}, { offset: 101 });
+
+    $('#three').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-3").addClass("active");}, { offset: 101 });
+    $('#four').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-4").addClass("active");}, { offset: 101 });
+    $('#one').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-1").addClass("active");}, { offset: 0 });
+</script>

@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Courier New';
+    padding: 0px;
+    margin: 0px;
+    background-image: url('./assets/bg-patternSide.png');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 2500px;
+}
+h1 {
+    width: 50%;
+    font-size: 65pt;
+    color: whitesmoke;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 7px;
+}
+h2 {
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+h3 {
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+}
+p {
+    color: whitesmoke;
+}
+
+.mainHead {
+    /* background-color: #080808; */
+    /* background-image: linear-gradient(to bottom, rgba(22, 22, 29, 0.1), rgba(22, 22, 29, 1)), url('./assets/bg-pattern.jpg'); */
+    padding-top: 300px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.nav {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+.navlinks {
+    margin: 5%;
+    padding: .5%;
+}
+.navlinks:link{color: yellow;
+    text-decoration: none;
+}
+.navlinks:visited{color: yellow;
+    text-decoration: none;
+}
+.navlinks:hover{
+    text-decoration: none;
+    animation-name: flashinglinks;
+    animation-duration: .25s;
+}
+
+@keyframes flashinglinks{
+    0% {background-color: grey;}
+    25% {background-color: #08080800;}
+    50% {background-color: grey;}
+    75% {background-color: #08080800;}
+}
+.item {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.menu {
+    margin-bottom: 10%;
+}
+.menuItemLeft {
+    margin-top: 10%;
+    margin-right: 55%;
+    width: 40%;
+    background-color: pink;
+    /* padding-left: -10px; */
+}
+.menuItemRight {
+    margin-top: 10%;
+    margin-left: 55%;
+    height: 50px;
+    padding: 10px;
+    width: 40%;
+}
+
+.gallery {
+    padding-top: 10%;
+    height: 750px;
+    background: pink;
+}
+
+.info {
+    margin-top: 10%;
+    padding-top: 10%;
+    text-align: center;
+    height: 750px;
+    background: red;
+}
+
+footer {
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px; */
+}
