@@ -6,11 +6,11 @@ body{
     font-family: 'Courier New';
     padding: 0px;
     margin: 0px;
-    background-image: url('./assets/bg-patternSide.png');
+    background-image: url('./assets/paint.png');
     background-attachment: fixed;
     background-size: 100%;
-    background-repeat: no-repeat;
-    height: 2500px;
+    background-repeat: repeat-y;
+
 }
 h1 {
     width: 50%;
